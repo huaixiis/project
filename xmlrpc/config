@@ -1,5 +1,3 @@
 tmpdir=/GPFS/felemx/tmp
-slurm.template=slurm.template
-tmpdir=/GPFS/felemx/tmp
-starccm=/GPFS/felemx/data/app/STAR-CCM+10.06.009-R8/star/bin/starccm+ -rsh ssh -np @NCPUS@ -on $HOST_LIST @SIMFILE@ -batch @JAVAFILE@
+starccm=/GPFS/felemx/data/app/STAR-CCM+10.06.009-R8/star/bin/starccm+ -rsh ssh -np @NCPUS@ -on $RMS_HOSTLIST  @SIMFILE@ -batch @JAVAFILE@
 testapp=hostname
